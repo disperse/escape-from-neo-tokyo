@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --config webpack/base.js --open"
+    "start": "webpack-dev-server --config webpack/base.js --open",
+    "spritesheet": "TexturePacker --format phaser --sheet src/assets/spritesheet.png --data src/assets/spritesheet.json src/assets/sprites"
   },
   "repository": {
     "type": "git",

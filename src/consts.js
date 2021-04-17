@@ -1,0 +1,1 @@
+export const TILE_SIZE = {width: 50, height: 50}

@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import logoImg from './assets/logo.png';
+import TILE_SIZE from './consts'
 
 class MyGame extends Phaser.Scene
 {
@@ -10,27 +10,24 @@ class MyGame extends Phaser.Scene
 
     preload ()
     {
-        this.load.image('logo', logoImg);
+        this.load.multiatlas('spritesheet', 'src/assets/spritesheet.json', 'src/assets/');
     }
       
     create ()
     {
-        const logo = this.add.image(400, 150, 'logo');
-      
-        this.tweens.add({
-            targets: logo,
-            y: 450,
-            duration: 1000,
-            ease: "Power2",
-            yoyo: true,
-            loop: -1
+        const player = this.add.sprite(100, 100, 'spritesheet', 'player/0001.png');
+        const frameNames = this.anims.generateFrameNames('spritesheet', {
+            start: 1, end: 3, zeroPad: 4,
+            prefix: 'player/', suffix: '.png'
         });
+        this.anims.create({ key: 'playeranim', frames: frameNames, frameRate: 5, repeat: -1 });
+        player.anims.play('playeranim');
     }
 }
 
 const config = {
     type: Phaser.AUTO,
-    parent: 'phaser-example',
+    parent: 'escape-from-neo-tokyo',
     width: 800,
     height: 600,
     scene: MyGame

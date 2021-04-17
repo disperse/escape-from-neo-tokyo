@@ -1,8 +1,24 @@
 # Escape from Neo Tokyo 
 ### *Working title*
 
+# Game flow
 
+![Overall game flow diagram](https://github.com/disperse/escape-from-neo-tokyo/blob/main/docs/images/game-flow.png?raw=true)
 
+## Influences
+There are no new ideas, nothing is created in a vacuum.
+
+  * Overland
+  * X-Com: Enemy Unknown
+  * Heat Signature  
+  * FTL
+  * Nethack
+  * Slay the Spire
+
+## Aesthetic Influences
+Aspire to achieve vibe, and appearance, similar to:
+
+  * Canabalt
 
 ## Acknowledgements
 
