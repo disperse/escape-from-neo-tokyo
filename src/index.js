@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import TILE_SIZE from './consts'
+import mapGenerator from './maps/generator'
 
 class MyGame extends Phaser.Scene
 {
@@ -22,6 +23,7 @@ class MyGame extends Phaser.Scene
         });
         this.anims.create({ key: 'playeranim', frames: frameNames, frameRate: 5, repeat: -1 });
         player.anims.play('playeranim');
+        mapGenerator();
     }
 }
 

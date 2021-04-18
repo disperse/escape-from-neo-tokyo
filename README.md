@@ -1,9 +1,21 @@
 # Escape from Neo Tokyo 
 ### *Working title*
 
-# Game flow
+## Game flow
 
 ![Overall game flow diagram](https://github.com/disperse/escape-from-neo-tokyo/blob/main/docs/images/game-flow.png?raw=true)
+
+## Map
+
+Using a variation on the [Spelunky algorithm](http://tinysubversions.com/spelunkyGen/) for now, instead of going down, we'll be crossing the city and making our way to the next zone.
+
+Each map section will be 800 x 600 where each square is 50x50 so 16x12 squares in each section.
+
+
+
+## Tools
+
+I'll be using [TexturePacker](https://www.codeandweb.com/texturepacker) to create spritesheets as it has a reasonable CLI.
 
 ## Influences
 There are no new ideas, nothing is created in a vacuum.
@@ -19,6 +31,7 @@ There are no new ideas, nothing is created in a vacuum.
 Aspire to achieve vibe, and appearance, similar to:
 
   * Canabalt
+  * Blade Runner
 
 ## Acknowledgements
 
